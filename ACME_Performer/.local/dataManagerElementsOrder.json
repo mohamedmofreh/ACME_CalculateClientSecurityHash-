@@ -1,0 +1,228 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TransactionItem&StateMachine_1",
+        "SystemException&StateMachine_1",
+        "BusinessException&StateMachine_1",
+        "TransactionNumber&StateMachine_1",
+        "Config&StateMachine_1",
+        "RetryNumber&StateMachine_1",
+        "TransactionField2&StateMachine_1",
+        "TransactionField1&StateMachine_1",
+        "TransactionID&StateMachine_1",
+        "dt_TransactionData&StateMachine_1",
+        "ConsecutiveSystemExceptions&StateMachine_1",
+        "ShouldStop&Sequence_25"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_OrchestratorQueueName",
+        "in_OrchestratorQueueFolder"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/InitAllSettings.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_SettingsAndConstants&Sequence_5",
+        "dt_Assets&Sequence_6",
+        "AssetValue&Sequence_11"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_ConfigFile",
+        "in_ConfigSheets",
+        "out_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/KillAllProcesses.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_strAllProcesses"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/InitAllApplications.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strUserName&Sequence_9",
+        "sstrPassword&Sequence_9"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/GetTransactionData.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_TransactionNumber",
+        "in_Config",
+        "out_TransactionItem",
+        "out_TransactionField1",
+        "out_TransactionField2",
+        "out_TransactionID",
+        "io_dt_TransactionData"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Process.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strClientInfo&Sequence_2",
+        "strSecurityHash&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_TransactionItem",
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ACME_Process/1_NavigateToItem.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolClientInfo&Sequence_8",
+        "strWIIDValue&Sequence_8",
+        "boolACMESite&Sequence_4"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_TimeOutS",
+        "in_ItemWIID",
+        "in_RetryInterval",
+        "in_NumOfRetries"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Template.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_NumOfRetries",
+        "in_RetryInterval"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ACME_Init/ACME_LogOut.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolLogBtn&Sequence_4",
+        "boolLoginPage&Sequence_8"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_TimeOutS",
+        "in_NumOfRetries",
+        "in_RetryInterval"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ACME_Init/ACME_Launch.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ds&TryCatch_3",
+        "boolACMESite&Sequence_18"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_strURL",
+        "in_tsRetryInterval",
+        "in_intNumOfRetries"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ACME_Process/2_GetClientInformation.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolClientInfo&Sequence_4"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_strClientInfo",
+        "in_TimeOutS",
+        "in_RetryInterval",
+        "in_NumOfRetries"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SHA1_Site/1_Open.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolSHA1Exist&Sequence_8"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_TimeOutS",
+        "in_RetryInterval",
+        "in_NumOfRetries"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SHA1_Site/2_GetClientSecurityHash.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolResultExist&Sequence_9",
+        "strClientData&Sequence_15",
+        "boolSHA1Exist&Sequence_4"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_strSecurityHash",
+        "in_TimeOutM",
+        "in_strClientInfo",
+        "in_RetryInterval",
+        "in_NumOfRetries"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ACME_Process/3_UpdateWorkItems.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strWorkDetails&Sequence_8",
+        "boolUpdateWindow&Sequence_13",
+        "boolUpdateBtn&Sequence_4"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_TimeOutS",
+        "in_strSecurityHash",
+        "in_TimeOutM",
+        "in_RetryInterval",
+        "in_NumOfRetries"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
